@@ -1,0 +1,43 @@
+{
+  "engines": {
+    "node": "v17.3.0"
+  },
+  "name": "crypto-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=api:* npm run devstart",
+    "local-server": "API_SERVER_URL=http://localhost:2000 npm run serverstart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcamach7/crypto-wallet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcamach7/crypto-wallet/issues"
+  },
+  "homepage": "https://github.com/rcamach7/crypto-wallet#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.30.0",
+    "coingecko-api": "^1.0.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  }
+}
